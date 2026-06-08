@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-maroon-light: #a32638;
+  --color-maroon: #800020;
+  --color-maroon-dark: #4A0404;
+  --color-maroon-rich: #300303;
+
+  --color-gold-light: #F9F3D5;
+  --color-gold: #D4AF37;
+  --color-gold-bright: #FFD700;
+  --color-gold-dark: #AA7C11;
+  --color-gold-pale: #FDF9E2;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Poppins", "Inter", sans-serif;
+}
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+@layer base {
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', 'Inter', sans-serif;
+  }
+  
+  body {
+    background-color: #FDFBF7; /* Beautiful luxury cream background */
+    color: #2D3748; /* Dark slate text for high readability */
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: #4A0404; /* Default all headings to rich dark maroon */
+  }
+}
+
+/* Custom styles for Swiper */
+.swiper-pagination-bullet {
+  background: rgba(128, 0, 32, 0.3) !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #800020 !important;
+  box-shadow: 0 0 8px rgba(128, 0, 32, 0.4) !important;
+  width: 24px !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #800020 !important;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transform: scale(1.1);
+  color: #D4AF37 !important;
+}
+
+@media (max-w: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}
+
+/* Custom backdrop blur card glassmorphism for light theme */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 10px 30px -10px rgba(74, 4, 4, 0.08);
+}
+
+.glass-card-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  border-color: rgba(128, 0, 32, 0.35);
+  box-shadow: 0 20px 40px -15px rgba(128, 0, 32, 0.15);
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-4px);
+}
+
+/* Golden text gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #AA7C11 0%, #D4AF37 50%, #B89020 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #FFEAA7 0%, #D4AF37 50%, #AA7C11 100%);
+}
+
+.bg-maroon-gradient {
+  background: linear-gradient(135deg, #800020 0%, #4A0404 50%, #2D0202 100%);
+}
+
+/* Glowing background animations for light theme */
+@keyframes bgShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.glowing-bg {
+  background: radial-gradient(circle at 10% 20%, rgba(212, 175, 55, 0.12) 0%, transparent 40%),
+              radial-gradient(circle at 90% 80%, rgba(128, 0, 32, 0.06) 0%, transparent 50%),
+              radial-gradient(circle at 50% 50%, rgba(253, 249, 226, 0.8) 0%, transparent 70%);
+  background-size: 200% 200%;
+  animation: bgShift 15s ease infinite;
+}
+
+/* Floating background blobs animations */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.05);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.95);
+  }
+}
+
+@keyframes floatMedium {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-40px, 40px) scale(1.1);
+  }
+}
+
+@keyframes floatReverse {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  40% {
+    transform: translate(50px, 30px) scale(0.9);
+  }
+  70% {
+    transform: translate(-30px, -40px) scale(1.05);
+  }
+}
+
+@keyframes sparkleDrift {
+  0% {
+    transform: translateY(100vh) translateX(0) scale(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-5vh) translateX(40px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 22s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: floatMedium 18s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: floatReverse 20s ease-in-out infinite;
+}
+
+.animate-sparkle-drift {
+  animation: sparkleDrift infinite linear;
+}
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FDFBF7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+  border: 2px solid #FDFBF7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #800020;
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, #800020 25%, #D4AF37 50%, #800020 75%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s infinite linear;
+}
+
+/* Lightbox styles */
+.lightbox-overlay {
+  background: rgba(10, 2, 2, 0.95);
+  backdrop-filter: blur(8px);
+}
