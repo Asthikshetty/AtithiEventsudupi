@@ -118,7 +118,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* CTA Buttons (Desktop) */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="tel:+919553273970"
+              href="tel:+919353273970"
               className="text-xs font-black tracking-wider text-gray-955 hover:text-maroon transition-colors py-1"
             >
               <span>9353273970</span>
@@ -220,11 +220,11 @@ export const Navbar: React.FC<NavbarProps> = ({
               {/* Call / Contact Buttons INSIDE drawer only */}
               <div className="flex flex-col gap-3 mb-6 border-t border-gold/15 pt-6">
                 <a
-                  href="tel:+919553273970"
+                  href="tel:+919353273970"
                   className="flex items-center justify-center gap-2 p-3.5 rounded bg-maroon text-white font-serif font-bold text-center text-sm shadow-md min-h-[44px] tracking-widest uppercase hover:bg-maroon-dark transition-colors"
                 >
                   <Phone className="w-4 h-4" />
-                  <span>Call: +91 95532 73970</span>
+                  <span>Call: +91 93532 73970</span>
                 </a>
                 <button
                   onClick={() =>
