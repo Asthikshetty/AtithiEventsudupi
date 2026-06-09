@@ -187,7 +187,7 @@ export const Footer: React.FC<FooterProps> = ({
     rel="noopener noreferrer"
     className="text-maroon font-medium hover:underline hover:text-maroon-dark transition-colors"
   >
-    Aexon Tech
+    Aexon Techs
   </a>
 </p>
           {/* Scroll to Top Button */}

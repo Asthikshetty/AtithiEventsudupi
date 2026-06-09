@@ -121,7 +121,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               href="tel:+919553273970"
               className="text-xs font-black tracking-wider text-gray-955 hover:text-maroon transition-colors py-1"
             >
-              <span>95532 73970</span>
+              <span>9353273970</span>
             </a>
             <button
               onClick={() => handleNavClick({ name: "Contact", type: "scroll", value: "contact" })}

@@ -55,7 +55,7 @@ export const Contact: React.FC = () => {
     }
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/919553273970?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/919353273970?text=${encodedMessage}`;
     
     window.open(whatsappUrl, "_blank");
   };
