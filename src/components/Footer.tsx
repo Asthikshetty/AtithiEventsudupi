@@ -70,7 +70,7 @@ export const Footer: React.FC<FooterProps> = ({
                 </svg>
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/athithi_events_and_catering_?igsh=MTNxNmd3cHllbWxwZw=="
                 target="_blank"
                 rel="noreferrer"
                 className="w-8 h-8 rounded-full border border-maroon/20 flex items-center justify-center text-maroon hover:bg-maroon/5 hover:border-maroon transition-all duration-300"
@@ -83,7 +83,7 @@ export const Footer: React.FC<FooterProps> = ({
                 </svg>
               </a>
               <a
-                href="https://youtube.com"
+                href=""
                 target="_blank"
                 rel="noreferrer"
                 className="w-8 h-8 rounded-full border border-maroon/20 flex items-center justify-center text-maroon hover:bg-maroon/5 hover:border-maroon transition-all duration-300"
