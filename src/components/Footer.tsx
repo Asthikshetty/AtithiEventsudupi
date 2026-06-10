@@ -59,7 +59,7 @@ export const Footer: React.FC<FooterProps> = ({
             {/* Social Icons */}
             <div className="flex items-center gap-3 pt-1">
               <a
-                href="https://facebook.com"
+                href="https://www.instagram.com/athithi_events_and_catering_?igsh=MTNxNmd3cHllbWxwZw=="
                 target="_blank"
                 rel="noreferrer"
                 className="w-8 h-8 rounded-full border border-maroon/20 flex items-center justify-center text-maroon hover:bg-maroon/5 hover:border-maroon transition-all duration-300"
@@ -83,7 +83,7 @@ export const Footer: React.FC<FooterProps> = ({
                 </svg>
               </a>
               <a
-                href=""
+                href="https://www.instagram.com/athithi_events_and_catering_?igsh=MTNxNmd3cHllbWxwZw=="
                 target="_blank"
                 rel="noreferrer"
                 className="w-8 h-8 rounded-full border border-maroon/20 flex items-center justify-center text-maroon hover:bg-maroon/5 hover:border-maroon transition-all duration-300"
