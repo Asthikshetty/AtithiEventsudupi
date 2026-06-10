@@ -29,7 +29,7 @@ export const Services: React.FC = () => {
   const handleEnquire = (title: string) => {
     const message = `Hi Atithi Events, I'm interested in your ${title} service. Please share details.`;
     const encoded = encodeURIComponent(message);
-    window.open(`https://wa.me/919553273970?text=${encoded}`, "_blank");
+    window.open(`https://wa.me/919353273970?text=${encoded}`, "_blank");
   };
 
   // Gallery items for the masonry grid
